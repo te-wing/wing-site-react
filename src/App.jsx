@@ -1,6 +1,7 @@
 import './App.css'
 import { Link, Routes, Route } from 'react-router-dom';  // Router
 import { Helmet } from 'react-helmet'; // Helmet
+import { open } from './utils/';
 
 //　ページコンポーネント
 function Home() {
@@ -39,10 +40,14 @@ function Contact() {
   return (
     <>
       <h2>Contacts</h2>
-      <h3>e-mail</h3>
-      <a href="mailto:wing@me.wing.osaka" target="_blank">wing@me.wing.osaka</a>
-      <h3>GitHub</h3>
-      <a href="./SNS/GitHub" target="_blank">wing-0902</a>
+      <div class="contactContainer">
+        <button onClick="sendEmail()">メール：wing@me.wing.osaka</button>
+        <button onClick="openSNS(GitHub)"></button>
+      </div>
+      <div class="contactContainer">
+        <h3>GitHub</h3>
+        <a href="./SNS/GitHub" target="_blank">wing-0902</a>
+      </div>
     </>
   )
 }
