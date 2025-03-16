@@ -94,7 +94,7 @@ function sendEmail() {
 }
 
 const openSNS = (platform) => {
-  window.location.href = `/SNS/${platform}`;
+  window.open(`./SNS/${platform}`, '_blank');
 };
 
 export default App
