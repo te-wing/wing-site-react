@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.mediaLogo {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mediaLogo {
+    color: white;
+  }
+}
