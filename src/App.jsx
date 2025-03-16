@@ -47,10 +47,6 @@ function Contact() {
           GitHub
         </button>
       </div>
-      <div class="contactContainer">
-        <h3>GitHub</h3>
-        <a href="./SNS/GitHub" target="_blank">wing-0902</a>
-      </div>
     </>
   )
 }
