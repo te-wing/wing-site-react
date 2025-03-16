@@ -1,1 +1,6 @@
+#ルートのリダイレクト
 / /home 301
+
+#SNSへのリンク
+/SNS/email mailto:wing@me.wing.osaka 301
+/SNS/GitHub https://github.com/te-wing 301
