@@ -35,9 +35,9 @@ function Contact() {
     <>
       <h2>Contacts</h2>
       <h3>e-mail</h3>
-      <a href="./SNS/e-mail">wing@me.wing.osaka</a>
+      <a href="mailto:wing@me.wing.osaka" target="_blank">wing@me.wing.osaka</a>
       <h3>GitHub</h3>
-      <a href="./SNS/GitHub">wing-0902</a>
+      <a href="./SNS/GitHub" target="_blank">wing-0902</a>
     </>
   )
 }
