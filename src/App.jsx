@@ -38,6 +38,10 @@ function About() {
 function Contact() {
   return (
     <>
+      <Helmet>
+        <title>Contacts | Wingのサイト</title>
+        <meta name="description" content="メール・SNS掲載してます．興味あったら，遠慮せんと連絡してや〜．メール：「wing@me.wing.osaka」，GitHub：「te-wing」" />
+      </Helmet>
       <h2>Contacts</h2>
       <div class="contactContainer">
         <button onClick={sendEmail}>
