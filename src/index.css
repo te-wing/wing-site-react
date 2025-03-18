@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Playwrite DK Loopet", cursive;
   line-height: 1.5;
   font-weight: 400;
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 1.7em;
   line-height: 1.1;
 }
 
@@ -45,6 +45,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  align-items: center;      /* 垂直方向の中央揃え */
 }
 button:hover {
   border-color: #646cff;
@@ -67,6 +68,6 @@ button:focus-visible {
   }
 }
 
-.contactContainer {
+.buttonContainer {
   display: flex;
 }
