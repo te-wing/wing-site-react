@@ -110,7 +110,7 @@ function App() {
           </div>
           <div className="footerContainer">
             <p>ブログ：</p>
-            <a href="https://blog.wing.osaka/" target="_blank">https://blog.wing.osaka/</a>
+            <a href="https://blog.wing.osaka/posts" target="_blank">https://blog.wing.osaka/posts</a>
           </div>
           <div className="footerContainer">
             <p>ダウンロード：</p>
