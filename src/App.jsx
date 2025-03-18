@@ -103,7 +103,7 @@ function App() {
 
         {/* Footer */}
         <footer>
-          <a>&copy; 2025 Wing. 特に記載のない限り，無断転載・無断改変を禁じます</a>
+          <p>&copy; 2025 Wing. 特に記載のない限り，無断転載・無断改変を禁じます</p>
           <div className="footerContainer">
             <p>連絡先：</p>
             <a href="mailto:wing@me.wing.osaka">wing@me.wing.osaka</a>
