@@ -71,3 +71,19 @@ button:focus-visible {
 .buttonContainer {
   display: flex;
 }
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding-top: 1.2em;
+}
+
+a, p {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}

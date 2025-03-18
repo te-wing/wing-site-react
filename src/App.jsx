@@ -48,7 +48,7 @@ function Contact() {
         <meta name="description" content="メール・SNS掲載してます．興味あったら，遠慮せんと連絡してや〜．メール：「wing@me.wing.osaka」，GitHub：「te-wing」" />
       </Helmet>
       <h2>Contacts</h2>
-      <div class="buttonContainer">
+      <div className="buttonContainer">
         <button onClick={sendEmail}>
         <svg class="mediaLogo" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
           wing@me.wing.osaka
@@ -85,6 +85,18 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
+        {/* Footer */}
+        <footer>
+          <div className="footerContainer">
+            <p>連絡先：</p>
+            <a href="mailto:wing@me.wing.osaka">wing@me.wing.osaka</a>
+          </div>
+          <div className="footerContainer">
+            <p>ブログ：</p>
+            <a href="https://blog.wing.osaka/" target="_blank">https://blog.wing.osaka/</a>
+          </div>
+        </footer>
       </div>
     </>
   )
