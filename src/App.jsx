@@ -1,8 +1,6 @@
 import './App.css'
 import { Link, Routes, Route } from 'react-router-dom';  // Router
 import { Helmet } from 'react-helmet'; // Helmet
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 //　ページコンポーネント
 function Home() {
@@ -83,7 +81,6 @@ function Contact() {
 }
 
 function App() {
-  usePageTracking();  // ページ遷移のたびにトラッキングを送信
   return (
     <>
       <div>
@@ -139,16 +136,5 @@ function sendEmail() {
 const openSNS = (platform) => {
   window.open(`./SNS/${platform}`, '_blank');
 };
-
-function usePageTracking() {
-  const location = useLocation();
-
-  useEffect(() => {
-    // Cloudflare Web Analytics のトラッキングコード
-    if (window.cfAnalytics) {
-      window.cfAnalytics.pageview(location.pathname + location.search);
-    }
-  }, [location]);
-}
 
 export default App
