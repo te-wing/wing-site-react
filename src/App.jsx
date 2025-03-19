@@ -1,7 +1,6 @@
 import './App.css'
 import { Link, Routes, Route } from 'react-router-dom';  // Router
 import { Helmet } from 'react-helmet'; // Helmet
-import wingLogo from './assets/wingLogo.jpg'; //ロゴ
 
 //　ページコンポーネント
 function Home() {

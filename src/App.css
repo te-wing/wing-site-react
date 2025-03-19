@@ -50,3 +50,28 @@
     color: white;
   }
 }
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -25px;
+}
+
+footer {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 42px;
+}
+
+a, p {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
