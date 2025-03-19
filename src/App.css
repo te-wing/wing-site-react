@@ -75,3 +75,9 @@ a, p {
   font-weight: 400;
   font-style: normal;
 }
+
+p.text {
+  text-align: left;
+  text-indent: 1em;
+  margin: 2px;
+}
