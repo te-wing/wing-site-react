@@ -1,6 +1,13 @@
 import './App.css'
 import { Link, Routes, Route } from 'react-router-dom';  // Router
 import { Helmet } from 'react-helmet'; // Helmet
+import React, { Suspense, lazy } from 'react'; //分割
+
+//lazy
+const Home = lazy(() => import('./home'))
+const About = lazy(() => import ('./about'))
+const Download = lazy(() => import ('./downloads'))
+const Contact = lazy(() => import ('./contact'))
 
 //　ページコンポーネント
 function Home() {
