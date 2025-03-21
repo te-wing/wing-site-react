@@ -1,10 +1,12 @@
 import './App.css'
 import { Link, Routes, Route } from 'react-router-dom';  // Router
 import React, { Suspense, lazy } from 'react'; //分割
-import Home from './pages/Home';
-import About from './pages/About';
-import Download from './pages/Download';
-import Contact from './pages/Contact';
+
+// React.lazyを使って遅延読み込み
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Download = React.lazy(() => import('./pages/Download'));
+const Contact = React.lazy(() => import('./pages/Contact'));
 
 function App() {
   //lazy
@@ -29,13 +31,15 @@ function App() {
           </nav>
         </header>
 
-        {/* Router */}
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/downloads" element={<Download />} />
-        </Routes>
+        {/* Suspenseでラップして、遅延読み込み中の表示を設定 */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/downloads" element={<Download />} />
+          </Routes>
+        </Suspense>
 
         {/* Footer */}
         <footer>
