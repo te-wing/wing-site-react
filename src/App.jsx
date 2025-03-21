@@ -2,19 +2,9 @@ import './App.css'
 import { Link, Routes, Route } from 'react-router-dom';  // Router
 import { Helmet } from 'react-helmet'; // Helmet
 import React, { Suspense, lazy } from 'react'; //分割
+import Home from './pages/Home';
 
 //　ページコンポーネント
-function Home() {
-  return (
-    <>
-      <Helmet>
-        <title>Wingのサイト</title>
-        <meta name="description" content="Wingのサイト．地球在住．もしかしたら，大阪に住んでるかもしれません（知らんけど）．気になったら，ウェブサイト見てな．"/>
-      </Helmet>
-      <h2>Home</h2>
-    </>
-  )
-}
 
 function About() {
   return (
