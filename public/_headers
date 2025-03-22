@@ -1,3 +1,8 @@
 /*
 	Cross-Origin-Opener-Policy: same-origin
 	Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+	Content-Security-Policy: default-src 'self'; 
+    script-src 'self' https://static.cloudflareinsights.com; 
+    style-src 'self' https://fonts.googleapis.com; 
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; 
+    connect-src 'self' https://cloudflareinsights.com
