@@ -1,6 +1,7 @@
 import './App.css'
 import { Link, Routes, Route } from 'react-router-dom';  // Router
 import React, { Suspense, lazy } from 'react'; //分割
+import wingLogo from './assets/wingLogo.svg'
 
 // React.lazyを使って遅延読み込み
 const Home = React.lazy(() => import('./pages/Home'));
@@ -9,12 +10,6 @@ const Download = React.lazy(() => import('./pages/Download'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 
 function App() {
-  //lazy
-  const lazyHome = lazy(() => Promise.resolve({default: Home}))
-  const lazyAbout = lazy(() => Promise.resolve({default:About}))
-  const lazyDownload = lazy(() => Promise.resolve({default:Download}))
-  const lazyContact = lazy(() => Promise.resolve({default:Contact}))
-
   return (
     <>
       <div>
