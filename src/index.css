@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(255, 255, 248, 0.873);
+  background-color: #0008ff27;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +15,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #3f48ffcb;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #4d56ffa9;
 }
 
 h3 {
@@ -54,7 +54,7 @@ button {
   align-items: center;      /* 垂直方向の中央揃え */
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #4d56ffa9;
 }
 button:focus,
 button:focus-visible {
@@ -63,13 +63,25 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #222222;
+    background-color: #8cd7ff;
   }
   a:hover {
-    color: #747bff;
+    color: #232eff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #b8e5ff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #ffd6b0e7;
+  }
+  a:hover {
+    color: #ffd52ddc;
+  }
+  button {
+    background-color: #0044ff16;
   }
 }
