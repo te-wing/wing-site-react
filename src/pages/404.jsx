@@ -5,7 +5,7 @@ export default function Error404() {
         <>
             <Helmet>
                 <title>404 Not Found | Wingのサイト</title>
-                <meta name="description" content="お探しのページは見つかりませんでした．削除されたか，移動した可能性があります．" />
+                <meta name="robots" content="noindex" />
             </Helmet>
             <h2>404 Nof Found</h2>
             <p>お探しのページは見つかりませんでした．削除されたか，移動した可能性があります．</p>
