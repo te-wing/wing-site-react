@@ -8,6 +8,7 @@ const Home = React.lazy(() => import('./pages/Home'));
 const About = React.lazy(() => import('./pages/About'));
 const Download = React.lazy(() => import('./pages/Download'));
 const Contact = React.lazy(() => import('./pages/Contact'));
+const Error404 = React.lazy(() => import('./pages/404'));
 
 function App() {
   return (
