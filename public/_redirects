@@ -2,6 +2,10 @@
 / /home 301
 https://wing-site-next.pages.dev/* https://wing.osaka/:splat 301
 
+#拡張子の削除
+/:page.html /:page 301
+/:page.jsx /:page 301
+
 #SNSへのリンク
 /SNS/GitHub https://github.com/te-wing 301
 /SNS/Blog https://blog.wing.osaka/posts/ 301
