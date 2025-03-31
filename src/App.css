@@ -51,9 +51,15 @@
   }
 }
 
-.buttonContainer {
+.snsButtonContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+.snsButton {
+  width: 6em;
+  margin: 0em 0.1em;
 }
 
 .footerContainer {
