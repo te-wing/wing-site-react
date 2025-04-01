@@ -21,8 +21,8 @@ function App() {
         </svg>
           <h1>Wing's HomePage</h1>
           <nav>
-            <Link className='headerLinkTo' to="/home">Home</Link> | 
-            <Link className='headerLinkTo' to="/about">About Me</Link> | 
+            <Link className='headerLinkTo' to="/home">Home</Link>
+            <Link className='headerLinkTo' to="/about">About Me</Link>
             <Link className='headerLinkTo' to="/contact">Contacts</Link>
           </nav>
         </header>
