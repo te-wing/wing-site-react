@@ -1,6 +1,11 @@
 #ルートのリダイレクト
 / /home 301
-https://wing-site-next.pages.dev/* https://wing.osaka/:splat 301
+/top /home 301
+/contacts /contact 301
+/aboutme /about 301
+/about-me /about 301
+/download /downloads 301
+
 
 #拡張子の削除
 /:page.html /:page 301
