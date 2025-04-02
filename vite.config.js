@@ -7,7 +7,6 @@ export default defineConfig({
   plugins: [
     react(),
     vike({
-      pages: 'src/pages', // ページのディレクトリを指定
       prerender: true, // プリレンダリングを有効化
     })
   ],
